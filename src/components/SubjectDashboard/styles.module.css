@@ -1,0 +1,53 @@
+.BackgroundSidebar {
+  margin: 0;
+  padding: 0;
+}
+
+.GridBackground {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.HomeBody {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.MainSidebar {
+  background-color: #4e4e4e !important;
+}
+
+.Banner {
+  background-color: #005ecf;
+  height: 7vh;
+}
+
+.BannerTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 0.6% !important;
+}
+
+.ButtonSegment {
+  flex-wrap: nowrap !important;
+  width: max-content;
+}
+.ButtonSegment:hover {
+  background-color: #005ecf !important;
+  color: white !important;
+}
+
+.SegmentTitle {
+  color: #005ecf;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SegmentHeader {
+  color: black;
+  text-decoration: underline;
+}
+
+.HelpButtonSegment {
+  padding: 0 !important;
+  margin: 0 !important;
+}
