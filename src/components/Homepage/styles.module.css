@@ -1,15 +1,18 @@
-.BackgroundSidebar {
-  margin: 0;
-  padding: 0;
+.LargestDiv {
+  width: 100vw;
+}
+.backgc {
+  background-color: aquamarine;
 }
 
-.GridBackground {
+.GridColumnBackground {
   margin: 0 !important;
   padding: 0 !important;
 }
-.HomeBody {
-  overflow-y: auto;
-  height: 100vh;
+.GridBackground {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
 }
 
 .MainSidebar {
@@ -18,13 +21,14 @@
 
 .Banner {
   background-color: #005ecf;
-  height: 7vh;
-}
-
-.BannerTitle {
+  height: 48px;
+  color: white !important;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  padding: 0.6% !important;
+}
+.BannerTitle {
+  padding-left: 1%;
+  padding-top: 0.5%;
 }
 
 .ButtonSegment {
@@ -47,7 +51,72 @@
   text-decoration: underline;
 }
 
-.HelpButtonSegment {
-  padding: 0 !important;
+.MainGrid {
+  width: 100%;
   margin: 0 !important;
+}
+
+.SidebarPusher {
+  margin-left: 350px;
+  width: calc(100% - 350px);
+}
+.SidebarSmallPusher {
+  width: calc(100% - 150px);
+}
+
+.HomeBody {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.SidebarGap {
+  height: 50%;
+}
+
+.SidebarSmallGap {
+  height: 40%;
+}
+
+.SidebarSmallGapFullscreen {
+  height: 45%;
+}
+
+.SidebarMenuItem {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.SidebarWordsSmall {
+  font-size: 9px;
+}
+
+.SidebarMenuItemSmall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.SidebarBrandLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.SidebarMenuItemOverall {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+.SidebarItemsTop {
+  margin-bottom: auto;
+}
+.SidebarMenuItemBottom {
+  margin-top: auto;
+}
+.trial {
+  background-color: aquamarine;
 }

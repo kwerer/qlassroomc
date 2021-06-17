@@ -19,7 +19,10 @@ function SubjectsSegment(props) {
             </Item.Header>
             <p>{description}</p>
           </Item.Content>
-          <SegmentButton SubjectPath={`${props.SubjectPath}`} />
+          <SegmentButton
+            SubjectPath={`${props.SubjectPath}`}
+            ButtonName="CONTINUE"
+          />
         </Item>
       </Item.Group>
     </Segment>

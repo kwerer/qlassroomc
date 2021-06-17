@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import LogoQlassroom from "../Images/LogoQlassroom.jpg";
 import SidebarDashboardBody from "./SubjectDashboardBody";
-import { SidebarItems } from "../Homepage/SidebarData";
+import { SidebarItemsTop } from "../Homepage/SidebarDataTop";
 
 export default function DashboardSidebar() {
   return (
@@ -27,7 +27,7 @@ export default function DashboardSidebar() {
                   Qlassroom
                 </Item.Header>
               </Menu.Item>
-              {SidebarItems.map((SidebarItem) => (
+              {SidebarItemsTop.map((SidebarItem) => (
                 <Link to={SidebarItem.path}>
                   <Menu.Item as="a">
                     {SidebarItem.icon}
@@ -54,7 +54,7 @@ export default function DashboardSidebar() {
                   <Item.Image size="mini" src={LogoQlassroom} />
                 </Item.Header>
               </Menu.Item>
-              {SidebarItems.map((SidebarItem) => (
+              {SidebarItemsTop.map((SidebarItem) => (
                 <Link to={SidebarItem.path}>
                   <Menu.Item as="a">{SidebarItem.icon}</Menu.Item>
                 </Link>

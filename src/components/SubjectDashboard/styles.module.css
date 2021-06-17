@@ -1,3 +1,7 @@
+.backgc {
+  background-color: aquamarine;
+}
+
 .BackgroundSidebar {
   margin: 0;
   padding: 0;
@@ -15,16 +19,34 @@
 .MainSidebar {
   background-color: #4e4e4e !important;
 }
+.trial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.MainTab {
+  background-color: violet;
+  height: 100vh;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-y: scroll;
+}
+
+.Tabs {
+  background-color: #e7e7e7;
+}
 
 .Banner {
   background-color: #005ecf;
-  height: 7vh;
-}
-
-.BannerTitle {
+  height: 48px;
+  color: white !important;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  padding: 0.6% !important;
+}
+.BannerTitle {
+  padding-left: 1%;
+  padding-top: 0.5%;
 }
 
 .ButtonSegment {
@@ -47,7 +69,31 @@
   text-decoration: underline;
 }
 
-.HelpButtonSegment {
+.TabMainGrid {
   padding: 0 !important;
   margin: 0 !important;
+  overflow-y: auto;
+  overflow: auto;
+  width: 500px !important;
+  background-color: #005ecf;
+}
+
+.SidebarPusher {
+  height: 100vh;
+  width: calc(100%-150px);
+}
+
+.GraphSegmentGraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GraphSegmentHeader {
+  text-align: center;
+}
+
+.GraphSegmentComparision {
+  text-align: right;
 }

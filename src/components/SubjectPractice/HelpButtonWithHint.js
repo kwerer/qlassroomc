@@ -7,29 +7,39 @@ import {
   Icon,
   Rail,
   Sticky,
+  Segment,
 } from "semantic-ui-react";
 import styles from "./styles.module.css";
 function HelpButton() {
-  let [open, setOpen] = useState(false);
-  const contextRef = createRef();
+  let [openHelp, setOpenHelp] = useState(false);
+  let [openHint, setOpenHint] = useState(false);
+  let [hintCount, setHintCount] = useState(3);
+
+  function handleHintClick() {
+    setOpenHint(true);
+    if (hintCount > 0) {
+      setHintCount(hintCount - 1);
+      console.log(hintCount);
+    } else {
+      console.log("No more hints");
+    }
+  }
   return (
     <>
-      <Rail attached internal position="right">
-        <Sticky context={contextRef}>
-          <Button floated="right" icon primary onClick={() => setOpen(true)}>
-            <Icon
-              name="question circle"
-              color="white"
-              className={styles.HelpButton}
-              attached
-            />
-          </Button>
-        </Sticky>
-      </Rail>
+      <h6 className={styles.HintNumber}>{hintCount}</h6>
+      <Button.Group vertical floated="right">
+        <Button icon floated="right" primary onClick={handleHintClick}>
+          <Icon name="lightbulb outline" color="white" attached size="big" />
+        </Button>
+        <Button icon floated="right" primary onClick={() => setOpenHelp(true)}>
+          <Icon name="question circle" color="white" attached size="big" />
+        </Button>
+      </Button.Group>
+
       <Modal
-        onClose={() => setOpen(false)}
-        onOpen={() => setOpen(true)}
-        open={open}
+        onClose={() => setOpenHelp(false)}
+        onOpen={() => setOpenHelp(true)}
+        open={openHelp}
       >
         <Modal.Header>Help is here</Modal.Header>
         <Modal.Content image>
@@ -43,7 +53,7 @@ function HelpButton() {
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <Button color="blue" onClick={() => setOpen(false)}>
+          <Button color="blue" onClick={() => setOpenHelp(false)}>
             Got it!
           </Button>
         </Modal.Actions>

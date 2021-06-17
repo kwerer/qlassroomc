@@ -9,7 +9,7 @@ function SegmentButton(props) {
       <Divider hidden />
       <Link to={`/${props.SubjectPath}`}>
         <Button className={styles.ButtonSegment}>
-          CONTINUE <Icon fitted name="arrow right" />
+          {props.ButtonName} <Icon fitted name="arrow right" />
         </Button>
       </Link>
       <Divider hidden />

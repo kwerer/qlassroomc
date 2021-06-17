@@ -1,0 +1,39 @@
+.SidebarRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.OptionsContainer {
+}
+
+.SidebarPusher {
+  height: 100vh;
+  width: 96%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.ButtonSegment {
+  flex-wrap: nowrap !important;
+  width: max-content;
+}
+.ButtonSegment:hover {
+  background-color: #005ecf !important;
+  color: white !important;
+}
+.CorrectAnswerSegment {
+  background-image: linear-gradient(to right, green, white) !important;
+}
+
+.trial {
+  background-color: aquamarine !important;
+}
+
+.HelpButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.HintNumber {
+  position: relative;
+}
