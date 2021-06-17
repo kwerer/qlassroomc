@@ -4,9 +4,9 @@ import StudyPlan from "./studyplan";
 import Settings from "./Settings";
 import Logout from "./logout";
 
-import BigSidebar from "./Sidebar";
+import BigSidebar from "./MainSidebar";
 
-export const SidebarItems = [
+export const SidebarItemsTop = [
   {
     item: "Home",
     icon: <Icon name="home" size="big" />,
@@ -18,17 +18,5 @@ export const SidebarItems = [
     icon: <Icon name="book " size="big" />,
     path: "/studyplan",
     component: StudyPlan,
-  },
-  {
-    item: "Settings",
-    icon: <Icon name="setting " size="big" />,
-    path: "/settings",
-    component: Settings,
-  },
-  {
-    item: "Logout",
-    icon: <Icon name="logout " size="big" />,
-    path: "/logout",
-    component: Logout,
   },
 ];
