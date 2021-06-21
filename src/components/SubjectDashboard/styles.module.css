@@ -10,29 +10,28 @@
 .GridBackground {
   margin: 0 !important;
   padding: 0 !important;
+  position: relative;
 }
 .HomeBody {
   overflow-y: auto;
   height: 100vh;
 }
 
-.MainSidebar {
-  background-color: #4e4e4e !important;
-}
 .trial {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: #e7e7e7;
+  height: 100vh;
 }
 
 .MainTab {
-  background-color: violet;
   height: 100vh;
   padding: 0 !important;
   margin: 0 !important;
-  overflow-y: scroll;
+  overflow-y: auto;
+  position: absolute;
 }
-
+.TabGrid {
+  padding: 0 !important;
+}
 .Tabs {
   background-color: #e7e7e7;
 }
@@ -43,10 +42,6 @@
   color: white !important;
   width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.BannerTitle {
-  padding-left: 1%;
-  padding-top: 0.5%;
 }
 
 .ButtonSegment {
@@ -69,18 +64,83 @@
   text-decoration: underline;
 }
 
+.TabMenuItem {
+  padding: 0 !important;
+  background-color: #e7e7e7;
+}
+.TabMenuSegment {
+  margin: 0 !important;
+}
 .TabMainGrid {
   padding: 0 !important;
   margin: 0 !important;
   overflow-y: auto;
-  overflow: auto;
-  width: 500px !important;
-  background-color: #005ecf;
+  overflow-x: hidden;
+  height: 100vh;
+  width: calc(100% - 35px);
+  background-color: white !important;
+}
+.Filler {
+  height: 100vh;
+
+  background-color: grey;
+}
+.TabHeaderSegment {
+  height: 200px;
+  border-radius: 0px 0px 10px 10px !important;
+  background-image: linear-gradient(
+    147.8deg,
+    rgba(144, 208, 128, 0.4) -5.78%,
+    rgba(204, 226, 225, 0.4) 51.58%
+  ) !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4) !important;
+  position: relative;
+  z-index: 5 !important;
+}
+.TabMenuSegmentPractice {
+  border-radius: 10px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4) !important;
+  z-index: 4 !important;
+  background-color: #e7e7e7 !important;
+}
+
+.TabMenuSegmentQuiz {
+  border-radius: 10px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4) !important;
+  z-index: 3 !important;
+  background-color: #e7e7e7 !important;
+}
+.TabMenuSegmentAnalytics {
+  border-radius: 10px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4) !important;
+  z-index: 2 !important;
+  background-color: #e7e7e7 !important;
+}
+.TabMenuSegmentPractice:hover {
+  background-color: white !important;
+}
+.TabMenuSegmentQuiz:hover {
+  background-color: white !important;
+}
+.TabMenuSegmentAnalytics:hover {
+  background-color: white !important;
+}
+
+.TabHeaderTitle {
+  left: 15px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.TabHeaderTitleMain {
+  margin-top: -15px;
 }
 
 .SidebarPusher {
   height: 100vh;
-  width: calc(100%-150px);
+  width: calc(100%-38px);
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .GraphSegmentGraph {
@@ -94,6 +154,25 @@
   text-align: center;
 }
 
+.GraphVisualSegmentHeader {
+  text-align: left;
+}
+
 .GraphSegmentComparision {
   text-align: right;
+}
+
+.DashboardButtonIcon {
+  color: white;
+}
+
+.DashboardButtonRow {
+  position: relative;
+}
+.HelpButton {
+  position: absolute;
+  right: -15px;
+  bottom: 20px;
+  padding-right: 20px !important;
+  background-color: #57749e !important;
 }

@@ -1,8 +1,15 @@
 import React from "react";
-import { Menu, Sidebar, Item, Container, Image } from "semantic-ui-react";
+import {
+  Menu,
+  Sidebar,
+  Item,
+  Container,
+  Image,
+  Divider,
+} from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import LogoQlassroom from "../Images/LogoQlassroom.jpg";
+import LogoQlassroom1 from "../Images/LogoQlassroom1.png";
 import HomepageBody from "./HomepageBody";
 import { SidebarItemsTop } from "./SidebarDataTop";
 import { SidebarItemsBottom } from "./SidebarDataBottom";
@@ -15,22 +22,25 @@ export default function SmallHomeSidebar() {
         icon
         vertical
         inverted
-        width="thin"
+        width="very thin"
         visible
-        className={styles.MainSidebar}
+        className={styles.MainSmallSidebar}
       >
         <div className={styles.SidebarMenuItemOverall}>
-          <Menu.Item>
-            <Item.Header className={styles.BrandLogo}>
-              <Item.Image size="mini" src={LogoQlassroom} />
-            </Item.Header>
-          </Menu.Item>
+          <Item.Image
+            src={LogoQlassroom1}
+            size="large"
+            className={styles.SmallSidebarBrandLogo}
+          />
+
           <div className={styles.SidebarItemsTop}>
             {SidebarItemsTop.map((SidebarItem) => (
               <Link to={SidebarItem.path}>
                 <Menu.Item as="a">
                   {SidebarItem.icon}
-                  <Menu.Header>{SidebarItem.item}</Menu.Header>
+                  <div className={styles.SmallSidebarIconText}>
+                    {SidebarItem.item}
+                  </div>
                 </Menu.Item>
               </Link>
             ))}
@@ -40,7 +50,9 @@ export default function SmallHomeSidebar() {
               <Link to={SidebarItem.path}>
                 <Menu.Item as="a">
                   {SidebarItem.icon}
-                  <Menu.Header>{SidebarItem.item}</Menu.Header>
+                  <div className={styles.SmallSidebarIconText}>
+                    {SidebarItem.item}
+                  </div>
                 </Menu.Item>
               </Link>
             ))}

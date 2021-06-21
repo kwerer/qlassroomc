@@ -14,15 +14,23 @@ function HelpButton() {
 
   return (
     <>
-      <Button
-        icon
-        onClick={() => setOpen(true)}
-        className={styles.HelpButton}
-        size="large"
-      >
-        <Icon name="question circle" inverted color="white" />
-      </Button>
-
+      <Rail internal attached position="right">
+        <Button
+          floated=" right"
+          size="large"
+          icon
+          className={styles.HelpButton}
+          onClick={() => setOpen(true)}
+        >
+          <Icon
+            name="question circle"
+            inverted
+            color="white"
+            size="large"
+            attached
+          />
+        </Button>
+      </Rail>
       <Modal
         onClose={() => setOpen(false)}
         onOpen={() => setOpen(true)}

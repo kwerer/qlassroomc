@@ -1,0 +1,92 @@
+.HeaderDiv {
+  margin: 10px;
+}
+.InputColumnRow {
+  margin-top: 55px;
+}
+.SegmentIcon {
+  padding-left: 15px;
+}
+.SegmentButtonIcon {
+  position: absolute;
+  right: 5px;
+}
+.SignInTextColumn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.SignInText {
+  color: #57749e !important;
+  font-weight: 600 !important;
+  font-size: 26px !important;
+}
+
+.InputHeader {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.InputBox {
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.InputBoxPassword {
+  width: 90%;
+
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.InputSegmentButton {
+  padding: 0px 10px !important;
+}
+.InputBoxSegment {
+  border-width: 0px !important;
+  background-color: #e2e2e2 !important;
+  border-radius: 5px !important;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 300px;
+}
+.Placeholder {
+  background-color: chartreuse !important;
+  color: black !important;
+}
+.ForgetPasswordContainer {
+  position: relative;
+}
+.ForgetPassword {
+  position: absolute;
+  right: 0;
+}
+.NeedAnAccount {
+  text-align: center;
+}
+.LoginColumnRow {
+  margin-top: 55px;
+}
+.LoginButton {
+  background-color: #57749e !important;
+  color: white !important;
+  font-size: 24px !important;
+}
+.InputGridColumn {
+  min-width: 300px;
+}
+.HelpButtonRow {
+  position: relative;
+}
+.HelpButton {
+  position: absolute !important;
+  right: 5px !important;
+  background-color: #57749e !important;
+}
+
+.SignUpButtonGridColumn {
+  min-width: 300px;
+}
+.trial {
+  background-color: teal !important;
+}

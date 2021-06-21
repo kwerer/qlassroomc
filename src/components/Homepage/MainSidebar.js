@@ -52,7 +52,7 @@ export default function BigHomeSidebar() {
                           {SidebarItem.icon}
 
                           <span className={styles.SidebarItem}>
-                            <h2>{SidebarItem.item}</h2>
+                            {SidebarItem.item}
                           </span>
                         </div>
                       </Menu.Item>
@@ -68,7 +68,7 @@ export default function BigHomeSidebar() {
                             {SidebarItem.icon}
                           </span>
                           <span className={styles.SidebarItem}>
-                            <h2>{SidebarItem.item}</h2>
+                            {SidebarItem.item}
                           </span>
                         </div>
                       </Menu.Item>

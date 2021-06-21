@@ -12,7 +12,7 @@ function GraphSegment(props) {
           </Item.Header>
           <Divider />
           <Item.Description className={styles.GraphSegmentGraph}>
-            <Item.Image src={`${props.SubjectImage}`} />
+            <Item.Image src={`${props.SubjectImage}`} size="large" />
           </Item.Description>
         </Item.Content>
         <div className={styles.GraphSegmentComparision}>

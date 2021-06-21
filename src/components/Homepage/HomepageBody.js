@@ -1,7 +1,9 @@
 import React from "react";
 import { Grid, Header, Container, Rail } from "semantic-ui-react";
 import SubjectsSegment from "./SubjectsSegment";
-
+import LogoPhysics from "../Images/LogoPhysics.jpg";
+import LogoBiology from "../Images/LogoBiology.jpg";
+import LogoChemistry from "../Images/LogoChemistry.jpg";
 import HelpButton from "./HelpButton";
 
 import styles from "./styles.module.css";
@@ -20,7 +22,7 @@ function HomepageBody() {
               Latest Activity
             </Container>
             <SubjectsSegment
-              SubjectImage="https://react.semantic-ui.com/images/wireframe/image.png"
+              SubjectImage={LogoPhysics}
               Subject="Physics"
               SubjectPath="physics"
             />
@@ -34,7 +36,7 @@ function HomepageBody() {
               Available Subjects
             </Container>
             <SubjectsSegment
-              SubjectImage="https://react.semantic-ui.com/images/wireframe/image.png"
+              SubjectImage={LogoBiology}
               Subject="Biology"
               SubjectPath="biology"
             />
@@ -45,7 +47,7 @@ function HomepageBody() {
           <Grid.Column></Grid.Column>
           <Grid.Column width={9}>
             <SubjectsSegment
-              SubjectImage="https://react.semantic-ui.com/images/wireframe/image.png"
+              SubjectImage={LogoChemistry}
               Subject="Chemistry"
               SubjectPath="chemistry"
             />

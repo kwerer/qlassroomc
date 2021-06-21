@@ -6,7 +6,7 @@ function GraphVisualSegment(props) {
     <Segment raised>
       <Item>
         <Item.Content>
-          <Item.Header as="h1" className={styles.GraphSegmentHeader}>
+          <Item.Header as="h1" className={styles.GraphVisualSegmentHeader}>
             {props.Subject}
           </Item.Header>
           <Divider />
@@ -14,9 +14,6 @@ function GraphVisualSegment(props) {
             <Item.Image src={`${props.SubjectImage}`} />
           </Item.Description>
         </Item.Content>
-        <div className={styles.GraphSegmentComparision}>
-          <u>Compare each quiz</u>
-        </div>
       </Item>
     </Segment>
   );
