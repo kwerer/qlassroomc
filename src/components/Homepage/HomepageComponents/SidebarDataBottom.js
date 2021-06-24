@@ -1,10 +1,7 @@
 import { Icon } from "semantic-ui-react";
 
-import StudyPlan from "./studyplan";
-import Settings from "./Settings";
-import Logout from "./logout";
-
-import BigSidebar from "./MainSidebar";
+import Settings from "../Settings";
+import Logout from "../logout";
 
 export const SidebarItemsBottom = [
   {

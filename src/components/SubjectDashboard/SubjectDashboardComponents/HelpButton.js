@@ -8,24 +8,22 @@ import {
   Rail,
   Sticky,
 } from "semantic-ui-react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 function HelpButton() {
   let [open, setOpen] = useState(false);
   const contextRef = createRef();
   return (
     <>
-      <Rail attached internal position="right">
-        <Sticky context={contextRef}>
-          <Button floated="right" icon primary onClick={() => setOpen(true)}>
-            <Icon
-              name="question circle"
-              color="white"
-              className={styles.HelpButton}
-              attached
-            />
-          </Button>
-        </Sticky>
-      </Rail>
+      <Button
+        icon
+        onClick={() => setOpen(true)}
+        className={styles.HelpButton}
+        size="big"
+        id="BottomRightHelpButton"
+      >
+        <Icon name="question circle" inverted color="white" />
+      </Button>
+
       <Modal
         onClose={() => setOpen(false)}
         onOpen={() => setOpen(true)}

@@ -1,0 +1,32 @@
+#TabGap2 > .ui.grid > .stretched.fourteen.wide.column {
+  padding: 0;
+  min-width: 200px;
+}
+
+#TabGap2 > .ui.grid > .two.wide.column {
+  padding-right: 0;
+  min-width: 140px;
+}
+
+#TabGap2 > .ui.grid > .two.wide.column > div {
+  margin-top: -14px;
+}
+#TabGap2 > .ui.grid {
+  margin-top: 0px !important;
+}
+
+#BottomRightHelpButton {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+}
+
+#TabGap2 > .ui.grid {
+  flex-wrap: nowrap !important;
+}
+@media only screen and (max-width: 600px) {
+  #TabGap2 > .ui.grid > .stretched.fourteen.wide.column {
+    padding: 0;
+    background-color: aqua;
+  }
+}

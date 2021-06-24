@@ -1,7 +1,6 @@
 import React from "react";
 import { Segment, Item, Divider } from "semantic-ui-react";
-import SegmentButton from "./SegmentButton";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 function GraphSegment(props) {
   return (
     <Segment raised>

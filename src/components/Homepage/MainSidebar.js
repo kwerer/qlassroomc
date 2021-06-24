@@ -11,9 +11,9 @@ import {
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import LogoQlassroom from "../Images/LogoQlassroom.png";
-import HomepageBody from "./HomepageBody";
-import { SidebarItemsTop } from "./SidebarDataTop";
-import { SidebarItemsBottom } from "./SidebarDataBottom";
+import HomepageBody from "./HomepageComponents/HomepageBody";
+import { SidebarItemsTop } from "./HomepageComponents/SidebarDataTop";
+import { SidebarItemsBottom } from "./HomepageComponents/SidebarDataBottom";
 import _ from "lodash";
 
 export default function BigHomeSidebar() {
@@ -33,10 +33,10 @@ export default function BigHomeSidebar() {
               className={styles.MainSidebar}
             >
               <div className={styles.SidebarMenuItemOverall}>
-                <Menu.Item>
+                <Menu.Item className={styles.LogoPicture}>
                   <Item.Header className={styles.BrandLogo}>
-                    <div className={styles.SidebarMenuItem}>
-                      <Item.Image size="mini" src={LogoQlassroom} />
+                    <div className={styles.SidebarMenuItemLogo}>
+                      <Item.Image size="large" src={LogoQlassroom} />
 
                       <span className={styles.SidebarItem}>
                         <h1>Qlassroom</h1>

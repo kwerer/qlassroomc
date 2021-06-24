@@ -1,11 +1,12 @@
 import "semantic-ui-css/semantic.min.css";
+import "./App.css";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import allReducers from "./components/ReduxComponents/reducers/index";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { SidebarItemsBottom } from "./components/Homepage/SidebarDataBottom";
-import { SidebarItemsTop } from "./components/Homepage/SidebarDataTop";
+import { SidebarItemsBottom } from "./components/Homepage/HomepageComponents/SidebarDataBottom";
+import { SidebarItemsTop } from "./components/Homepage/HomepageComponents/SidebarDataTop";
 import PhysicsDashboard from "./components/SubjectDashboard/PhysicsDashboard";
 import PhysicsPractice from "./components/SubjectPractice/PhysicsPractice";
 import MainLoginPage from "./components/LoginPage/MainLoginPage";

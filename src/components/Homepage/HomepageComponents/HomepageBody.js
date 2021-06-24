@@ -1,24 +1,20 @@
 import React from "react";
-import { Grid, Header, Container, Rail } from "semantic-ui-react";
+import { Grid, Header, Container } from "semantic-ui-react";
 import SubjectsSegment from "./SubjectsSegment";
-import LogoPhysics from "../Images/LogoPhysics.jpg";
-import LogoBiology from "../Images/LogoBiology.jpg";
-import LogoChemistry from "../Images/LogoChemistry.jpg";
+import LogoPhysics from "../../Images/LogoPhysics.jpg";
+import LogoBiology from "../../Images/LogoBiology.jpg";
+import LogoChemistry from "../../Images/LogoChemistry.jpg";
 import HelpButton from "./HelpButton";
-
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 
 function HomepageBody() {
   return (
     <div className={styles.HomeBody}>
-      <Header fluid className={styles.Banner}>
-        <h1 className={styles.BannerTitle}>Home</h1>
-      </Header>
       <Grid className={styles.MainGrid}>
         <Grid.Row columns="equal">
           <Grid.Column></Grid.Column>
-          <Grid.Column width={9}>
-            <Container className={styles.SegmentTitle}>
+          <Grid.Column width={13}>
+            <Container className={styles.SegmentTitle} fluid>
               Latest Activity
             </Container>
             <SubjectsSegment
@@ -31,8 +27,8 @@ function HomepageBody() {
         </Grid.Row>
         <Grid.Row columns="equal">
           <Grid.Column></Grid.Column>
-          <Grid.Column width={9}>
-            <Container className={styles.SegmentTitle}>
+          <Grid.Column width={13}>
+            <Container className={styles.SegmentTitle} fluid>
               Available Subjects
             </Container>
             <SubjectsSegment
@@ -45,7 +41,7 @@ function HomepageBody() {
         </Grid.Row>
         <Grid.Row columns="equal">
           <Grid.Column></Grid.Column>
-          <Grid.Column width={9}>
+          <Grid.Column width={13}>
             <SubjectsSegment
               SubjectImage={LogoChemistry}
               Subject="Chemistry"

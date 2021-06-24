@@ -1,4 +1,4 @@
-const ChangeTabReducer = (state = 1, action) => {
+const ChangeTabReducer = (state = 0, action) => {
   if (action.type === 0) {
     return 0;
   } else if (action.type === 1) {

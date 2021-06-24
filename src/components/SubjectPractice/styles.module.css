@@ -1,3 +1,13 @@
+.a {
+  background-color: red;
+}
+.b {
+  background-color: green;
+}
+
+.c {
+  background-color: blue;
+}
 .MainGrid {
   width: 100vw;
 }
@@ -73,13 +83,14 @@
 }
 
 .HelpButtonRow {
-  position: relative;
+}
+.DashboardButtonRow {
+  background-color: aqua;
 }
 
 .HelpButtonWithHint {
-  position: absolute;
-  right: 35px;
-  bottom: 60px;
+  margin-right: 20px !important;
+  position: relative;
 }
 
 .HelpButtonWithHintIndivButtons {
@@ -88,7 +99,7 @@
 
 .HintCounter {
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 8px;

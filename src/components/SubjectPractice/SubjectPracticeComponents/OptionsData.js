@@ -1,5 +1,5 @@
 import { Segment, Container } from "semantic-ui-react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 export const OptionsData = [
   {
     questionText: "Which is the structure of the ribosome?",

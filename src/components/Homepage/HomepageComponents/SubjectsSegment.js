@@ -1,6 +1,6 @@
 import React from "react";
 import { Segment, Item, Divider } from "semantic-ui-react";
-
+import styles from "../styles.module.css";
 import SegmentButton from "./SegmentButton";
 
 function SubjectsSegment(props) {
@@ -8,7 +8,7 @@ function SubjectsSegment(props) {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat non augue consequat massa. Vel nulla velit, etiam placerat maecenas lorem. Cursus mi, suscipit feugiat eu quis. Mauris et lacus aliquam iaculis.";
 
   return (
-    <Segment raised>
+    <Segment raised className={styles.SubjectSegment}>
       <Item.Group>
         <Item>
           <Item.Image size="tiny" src={`${props.SubjectImage}`} />

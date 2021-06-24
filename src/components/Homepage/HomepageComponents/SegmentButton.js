@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Divider, Icon } from "semantic-ui-react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 import { Link } from "react-router-dom";
 
 function SegmentButton(props) {

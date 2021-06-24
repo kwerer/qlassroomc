@@ -9,13 +9,13 @@ import {
   Sticky,
   Segment,
 } from "semantic-ui-react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 export default function HelpButtonWithHint() {
   let [openHelp, setOpenHelp] = useState(false);
   let [openHint, setOpenHint] = useState(false);
   let [noMoreHints, setNoMoreHints] = useState(false);
   let [hintCount, setHintCount] = useState(3);
-
+  const contextRef = createRef();
   function handleHintClick() {
     if (hintCount > 0) {
       setHintCount(hintCount - 1);
@@ -28,7 +28,11 @@ export default function HelpButtonWithHint() {
   }
   return (
     <>
-      <Button.Group vertical className={styles.HelpButtonWithHint}>
+      <Button.Group
+        vertical
+        className={styles.HelpButtonWithHint}
+        floated="right"
+      >
         <Button
           icon
           primary

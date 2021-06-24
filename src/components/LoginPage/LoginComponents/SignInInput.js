@@ -6,7 +6,7 @@ import InputSegmentEmail from "./InputSegmentEmail";
 import InputSegmentPassword from "./InputSegmentPassword";
 import LoginButton from "./LoginButton";
 import HelpButton from "./HelpButton";
-import HeaderComponent from "../SetUpComponents/HeaderComponent";
+import HeaderComponent from "../Common/HeaderComponent";
 function SignInInput() {
   return (
     <Grid>
@@ -47,7 +47,7 @@ function SignInInput() {
         <Grid.Column></Grid.Column>
         <LoginButton />
         <Grid.Column>
-          <HelpButton />
+          
         </Grid.Column>
       </Grid.Row>
       <Grid.Row columns="equal">
@@ -59,6 +59,7 @@ function SignInInput() {
         </Grid.Column>
         <Grid.Column></Grid.Column>
       </Grid.Row>
+      <Grid.Row><HelpButton /></Grid.Row>
     </Grid>
   );
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SmallHomeSidebar from "../Homepage/SmallHomeSidebar";
 import {
   Sidebar,
   Grid,
@@ -10,7 +9,7 @@ import {
   Form,
   Checkbox,
 } from "semantic-ui-react";
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 import SubjectPracticeHeader from "./SubjectPracticeHeader";
 import { OptionsData } from "./OptionsData";
 function SubjectPracticeOptions() {

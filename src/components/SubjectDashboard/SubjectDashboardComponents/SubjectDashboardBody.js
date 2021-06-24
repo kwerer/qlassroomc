@@ -4,7 +4,7 @@ import SubjectsSegment from "./SubjectsSegment";
 
 import HelpButton from "./HelpButton";
 
-import styles from "./styles.module.css";
+import styles from "../styles.module.css";
 
 function SubjectDashboardBody(props) {
   return (

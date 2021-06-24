@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import SmallHomeSidebar from "../Homepage/SmallHomeSidebar";
+import React, { useState, createRef } from "react";
+import SmallHomeSidebar from "../CommonComponents/SmallHomeSidebar";
 import {
   Sidebar,
   Grid,
@@ -11,18 +11,21 @@ import {
   Checkbox,
   Button,
   Transition,
+  Ref,
+  Rail,
+  Sticky,
 } from "semantic-ui-react";
 import styles from "./styles.module.css";
-import SubjectPracticeHeader from "./SubjectPracticeHeader";
-import { OptionsData } from "./OptionsData";
-import HelpButtonWithHint from "./HelpButtonWithHint";
+import SubjectPracticeHeader from "./SubjectPracticeComponents/SubjectPracticeHeader";
+import { OptionsData } from "./SubjectPracticeComponents/OptionsData";
+import HelpButtonWithHint from "./SubjectPracticeComponents/HelpButtonWithHint";
 import CellStructure from "../Images/CellStructure.jpg";
 
 function PhysicsPractice() {
   let [value, setValue] = useState(0);
   let [CorrectVisible, setCorrectVisible] = useState(false);
   let [WrongVisible, setWrongVisible] = useState(false);
-
+  const contextRef = createRef();
   const handleChange = (event, { value }) => {
     setValue(value);
   };
@@ -132,6 +135,12 @@ function PhysicsPractice() {
                   </Form>
                 </div>
               </Grid.Column>
+              <Grid.Column
+                verticalAlign="bottom"
+                className={styles.HelpButtonRow}
+              >
+                <HelpButtonWithHint />
+              </Grid.Column>
             </Grid.Row>
 
             <Grid.Row>
@@ -148,9 +157,7 @@ function PhysicsPractice() {
               >
                 CHECK
               </Button>
-            </Grid.Row>
-            <Grid.Row className={styles.HelpButtonRow}>
-              <HelpButtonWithHint />
+              <Grid.Column width={3}></Grid.Column>
             </Grid.Row>
           </Grid>
         </Sidebar.Pusher>

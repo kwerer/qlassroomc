@@ -10,9 +10,8 @@ import {
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import LogoQlassroom1 from "../Images/LogoQlassroom1.png";
-import HomepageBody from "./HomepageBody";
-import { SidebarItemsTop } from "./SidebarDataTop";
-import { SidebarItemsBottom } from "./SidebarDataBottom";
+import { SidebarItemsTop } from "../Homepage/HomepageComponents/SidebarDataTop";
+import { SidebarItemsBottom } from "../Homepage/HomepageComponents/SidebarDataBottom";
 
 export default function SmallHomeSidebar() {
   return (

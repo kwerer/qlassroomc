@@ -7,7 +7,7 @@ import ReInputSegmentPassword from "./RE-InputSegmentPassword";
 import InputSegmentPassword from "./InputSegmentPassword";
 import SignUpButton from "./SignUpButton";
 import HelpButton from "./HelpButton";
-import HeaderComponent from "../SetUpComponents/HeaderComponent";
+import HeaderComponent from "../Common/HeaderComponent";
 function SignUpInput() {
   return (
     <Grid>

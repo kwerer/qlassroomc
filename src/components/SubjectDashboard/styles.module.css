@@ -10,7 +10,11 @@
 .GridBackground {
   margin: 0 !important;
   padding: 0 !important;
-  position: relative;
+  min-width: 400px;
+}
+.GridBackground1 {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .HomeBody {
   overflow-y: auto;
@@ -19,21 +23,13 @@
 
 .trial {
   background-color: #e7e7e7;
-  height: 100vh;
 }
 
-.MainTab {
-  height: 100vh;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow-y: auto;
-  position: absolute;
-}
 .TabGrid {
-  padding: 0 !important;
 }
 .Tabs {
   background-color: #e7e7e7;
+  height: 100vh !important;
 }
 
 .Banner {
@@ -56,7 +52,6 @@
 .SegmentTitle {
   color: #005ecf;
   font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .SegmentHeader {
@@ -71,20 +66,24 @@
 .TabMenuSegment {
   margin: 0 !important;
 }
+.MainTab {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-y: auto;
+}
 .TabMainGrid {
   padding: 0 !important;
   margin: 0 !important;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   height: 100vh;
-  width: calc(100% - 35px);
+
   background-color: white !important;
 }
 .Filler {
-  height: 100vh;
-
-  background-color: grey;
+  background-color: #e7e7e7 !important;
 }
+
 .TabHeaderSegment {
   height: 200px;
   border-radius: 0px 0px 10px 10px !important;
@@ -137,10 +136,10 @@
 }
 
 .SidebarPusher {
-  height: 100vh;
-  width: calc(100%-38px);
   padding: 0 !important;
   margin: 0 !important;
+  height: 100vh;
+  width: calc(100%-38px);
 }
 
 .GraphSegmentGraph {
@@ -170,9 +169,5 @@
   position: relative;
 }
 .HelpButton {
-  position: absolute;
-  right: -15px;
-  bottom: 20px;
-  padding-right: 20px !important;
   background-color: #57749e !important;
 }
