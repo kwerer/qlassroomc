@@ -1,9 +1,7 @@
 import React from "react";
 import { Grid, Header, Container } from "semantic-ui-react";
 import SubjectsSegment from "./SubjectsSegment";
-
 import HelpButton from "./HelpButton";
-
 import styles from "../styles.module.css";
 
 function SubjectDashboardBody(props) {

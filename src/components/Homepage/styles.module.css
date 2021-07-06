@@ -108,7 +108,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding-left: 0px !important;
 }
 .SidebarMenuItem {
@@ -116,7 +116,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .SidebarWordsSmall {

@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Grid,
-  Form,
-  Checkbox,
-  Transition,
-  Segment,
-  Button,
-} from "semantic-ui-react";
+import { Grid, Form, Checkbox, Transition, Button } from "semantic-ui-react";
 import styles from "../styles.module.css";
 import { OptionsData } from "./OptionsData";
 

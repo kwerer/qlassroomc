@@ -1,17 +1,9 @@
-import React, { useState, createRef } from "react";
-import {
-  Button,
-  Header,
-  Image,
-  Modal,
-  Icon,
-  Rail,
-  Sticky,
-} from "semantic-ui-react";
+import React, { useState } from "react";
+import { Button, Header, Image, Modal, Icon } from "semantic-ui-react";
 import styles from "../styles.module.css";
 function HelpButton() {
   let [open, setOpen] = useState(false);
-  const contextRef = createRef();
+
   return (
     <>
       <Button
@@ -21,7 +13,7 @@ function HelpButton() {
         size="big"
         id="BottomRightHelpButton"
       >
-        <Icon name="question circle" inverted color="white" />
+        <Icon name="question circle" inverted />
       </Button>
 
       <Modal

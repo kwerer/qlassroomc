@@ -1,21 +1,15 @@
 import React, { useState, createRef } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import {
-  Header,
   Container,
   Tab,
   Menu,
   Sidebar,
-  Item,
   Grid,
   Button,
   Segment,
   Icon,
   Divider,
-  Ref,
-  Rail,
-  Sticky,
 } from "semantic-ui-react";
 import SubjectsSegment from "./SubjectDashboardComponents/SubjectsSegment";
 import { useSelector, useDispatch } from "react-redux";
@@ -26,16 +20,17 @@ import HelpButton from "./SubjectDashboardComponents/HelpButton";
 import LogoPhysics from "../Images/LogoPhysics.jpg";
 import CircleGraph from "../Images/CircleGraph.jpg";
 import Graph from "../Images/Graph.jpg";
-import Tab1 from "../ReduxComponents/actions/ChangeTabButton/ChangeTabIndex1";
-import Tab0 from "../ReduxComponents/actions/ChangeTabButton/ChangeTabIndex0";
-import Tab2 from "../ReduxComponents/actions/ChangeTabButton/ChangeTabIndex2";
-import Tab3 from "../ReduxComponents/actions/ChangeTabButton/ChangeTabIndex3";
+import {
+  Tab0,
+  Tab1,
+  Tab2,
+  Tab3,
+} from "../ReduxComponents/reduxSlicer/ChangeTabs";
+
 function PhysicsDashboard() {
-  const TabIndex = useSelector((state) => state.ChangeTab);
-  const PressedBack = useSelector((state) => state.PressedBack);
+  const { TabNumber } = useSelector((state) => state.changeTabs);
   let [activeIndex, setActiveIndex] = useState(0);
   const dispatch = useDispatch();
-  const contextRef = createRef();
   function handleTabChange(e) {
     setActiveIndex(e.target.id);
     if (e.target.id === "0") {
@@ -50,6 +45,7 @@ function PhysicsDashboard() {
       console.log("doesnt work");
     }
     console.log(e.target.id);
+    console.log(TabNumber);
   }
   function handleRangeChange(e) {
     dispatch(Tab0());
@@ -318,14 +314,12 @@ function PhysicsDashboard() {
                   vertical: true,
                   tabular: false,
                   fluid: "true",
-                  borderless: "true",
                 }}
                 grid={{ paneWidth: 14, tabWidth: 2 }}
                 panes={panes}
-                fluid="true"
                 className={styles.Tabs}
                 onTabChange={handleTabChange}
-                activeIndex={TabIndex}
+                activeIndex={TabNumber}
               />
             </Grid.Column>
           </Sidebar.Pusher>

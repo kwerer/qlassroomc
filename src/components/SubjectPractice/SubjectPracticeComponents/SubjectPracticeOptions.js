@@ -1,16 +1,6 @@
 import React, { useState } from "react";
-import {
-  Sidebar,
-  Grid,
-  Header,
-  Segment,
-  Image,
-  Container,
-  Form,
-  Checkbox,
-} from "semantic-ui-react";
+import { Form, Checkbox } from "semantic-ui-react";
 import styles from "../styles.module.css";
-import SubjectPracticeHeader from "./SubjectPracticeHeader";
 import { OptionsData } from "./OptionsData";
 function SubjectPracticeOptions() {
   let [value, setValue] = useState(null);

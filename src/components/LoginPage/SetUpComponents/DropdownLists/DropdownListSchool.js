@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Dropdown, Segment } from "semantic-ui-react";
+import { Container, Dropdown } from "semantic-ui-react";
 import styles from "../styles.module.css";
 const options = [
   { key: 1, text: "School 1", value: 1 },

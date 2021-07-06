@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Image } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import LogoQlassroomLogin from "../../Images/LogoQlassroomLogin.jpg";
 import styles from "./styles.module.css";
 export default function HeaderComponent() {

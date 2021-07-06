@@ -1,13 +1,5 @@
-import React, { useState, createRef } from "react";
-import {
-  Button,
-  Header,
-  Image,
-  Modal,
-  Icon,
-  Rail,
-  Sticky,
-} from "semantic-ui-react";
+import React, { useState } from "react";
+import { Button, Header, Image, Modal, Icon, Rail } from "semantic-ui-react";
 import styles from "../styles.module.css";
 function HelpButton() {
   let [open, setOpen] = useState(false);
@@ -16,19 +8,13 @@ function HelpButton() {
     <>
       <Rail internal attached position="right">
         <Button
-          floated=" right"
+          floated="right"
           size="large"
           icon
           className={styles.HelpButton}
           onClick={() => setOpen(true)}
         >
-          <Icon
-            name="question circle"
-            inverted
-            color="white"
-            size="large"
-            attached
-          />
+          <Icon name="question circle" inverted size="large" attached />
         </Button>
       </Rail>
       <Modal

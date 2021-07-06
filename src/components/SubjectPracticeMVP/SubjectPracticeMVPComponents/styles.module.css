@@ -1,0 +1,239 @@
+.MainGrid {
+  overflow: hidden;
+}
+
+.HeaderSegment {
+  background-image: linear-gradient(
+    98.4deg,
+    rgba(144, 208, 128, 0.4) -11.5%,
+    rgba(117, 157, 218, 0.4) 113.02%
+  ) !important;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  margin-bottom: 0 !important;
+  height: 70px;
+  box-shadow: 0px 3px 10px rgba(10, 10, 10, 0.2) !important;
+}
+
+.BannerQuestionNumber {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #57749e;
+}
+.BannerRow {
+  padding-bottom: 0 !important;
+}
+.BannerCol {
+  height: 70px !important;
+}
+.QuestionButtonRow {
+  padding-top: 0 !important;
+}
+.HeaderIconContainer {
+  width: 150px;
+}
+.HeaderContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderButton {
+  background-color: transparent !important;
+  color: #57749e !important;
+}
+
+.HeaderTitle {
+  width: 150px;
+  font-size: 10px;
+  color: #606060;
+}
+
+.DropdownDiv {
+  display: flex;
+  justify-content: center;
+}
+.DropdownHeader {
+  text-align: center;
+  color: #57749e !important;
+}
+.DropdownMenu {
+  padding: 10% 0 0 0 !important;
+  position: absolute;
+  top: 0px !important;
+  border-radius: 0px 0px 5px 5px !important;
+}
+
+.TPCol {
+  text-align: center;
+}
+
+.AnswerColumn {
+}
+.AnswerHeader {
+  color: white;
+}
+.AnswerSegment {
+  background-color: #4e4e4e;
+  position: relative;
+  height: calc(100vh - 42px);
+  overflow-y: scroll;
+}
+.AnswerOptions {
+  margin-top: 20px;
+  width: 100% !important;
+}
+.AnswerSegmentRow {
+  margin-top: 50px;
+}
+
+.AnswerButton {
+  margin-top: 15px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2) !important;
+  background-color: white !important;
+  text-align: start !important;
+  display: flex !important;
+  flex-direction: row;
+}
+
+.AnswerButtonGreen {
+  margin-top: 15px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2) !important;
+  background-color: Green !important;
+  text-align: start !important;
+  display: flex !important;
+  flex-direction: row;
+}
+.YourAnswer {
+  border: 1px solid #57749e;
+  border-radius: 20px;
+  padding: 0px 5px 0px 5px;
+  margin-left: 20%;
+  background-color: #57749e;
+  color: white;
+  font-size: 11px;
+}
+.SubmittedAnswerOptions {
+  width: 100%;
+}
+.DivHeight {
+  height: 75px !important;
+}
+
+.AnswerDropdown {
+  width: 100%;
+}
+.AnswerDropdownMain {
+  margin-bottom: 50px !important;
+  margin-top: 50px !important;
+}
+.AnswerDropdownHeader {
+  word-wrap: normal !important;
+  white-space: normal !important;
+  width: 200px;
+}
+.AnswerDropdownSegment {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  position: relative;
+  border: hidden !important;
+}
+.AnswerButtonAngle {
+  position: absolute;
+  right: 0;
+}
+.DropdownMenu {
+  height: fit-content;
+  overflow: hidden !important;
+}
+.AnswerSegmentButtonGroup {
+  position: absolute;
+  bottom: 20px;
+}
+.AnswerSegmentHintButton {
+  border-radius: 50px !important;
+  background-color: #fcddec !important;
+  color: #57749e !important;
+}
+.AnswerSegmentCheckButton {
+  border-radius: 50px !important;
+  color: white !important;
+  margin-left: 5px !important;
+}
+.AnswerSegmentNextButton {
+  border-radius: 50px !important;
+  color: white !important;
+  background-color: #2f9ceb !important;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+}
+.QuestionsBodyColumn {
+  position: relative;
+}
+.QuestionBodyContainer {
+  width: 500px !important;
+  position: absolute;
+  margin-top: 125px;
+  left: 25%;
+}
+.DropdownButton {
+  padding: 0 !important;
+}
+
+.DropdownInDivButton {
+  width: 55px;
+  height: 55px;
+  font-size: 14px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important ;
+  margin-right: 0 !important;
+  padding-top: 10px !important;
+  background-color: white !important;
+  color: #57749e !important;
+}
+
+.DropdownInDivButtonDiv {
+  padding: 5px 2px 5px 2px !important;
+}
+.DropdownInDivButtonDivBorder {
+  border: 2px solid #57749e;
+  border-radius: 50px;
+}
+
+.DropdownCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.DropdownBackButton {
+  margin-right: 0 !important;
+  margin-top: 20px !important;
+  padding: 3px 0px 0px 0px !important;
+  background-color: #57749e !important;
+}
+
+.Modal {
+  width: 600px !important;
+}
+
+.ModalTitle {
+  color: #57749e;
+}
+.ModalDivider {
+  background-color: #57749e !important ;
+  width: 80%;
+}
+.ModalButtonDiv {
+  margin-top: 20px;
+}
+
+.ModalButton {
+  background-color: #57749e !important;
+  color: white !important;
+}

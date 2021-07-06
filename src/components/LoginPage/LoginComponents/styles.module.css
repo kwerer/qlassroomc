@@ -26,6 +26,12 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+.InputHeaderPassword {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 .InputBox {
   width: 90%;
   padding-left: 15px;
@@ -70,6 +76,7 @@
   background-color: #57749e !important;
   color: white !important;
   font-size: 24px !important;
+  margin-top: 50px !important;
 }
 .InputGridColumn {
   min-width: 300px;

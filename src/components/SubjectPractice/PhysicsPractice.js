@@ -1,19 +1,14 @@
-import React, { useState, createRef } from "react";
+import React, { useState } from "react";
 import SmallHomeSidebar from "../CommonComponents/SmallHomeSidebar";
 import {
   Sidebar,
   Grid,
   Header,
-  Segment,
   Image,
-  Modal,
   Form,
   Checkbox,
   Button,
   Transition,
-  Ref,
-  Rail,
-  Sticky,
 } from "semantic-ui-react";
 import styles from "./styles.module.css";
 import SubjectPracticeHeader from "./SubjectPracticeComponents/SubjectPracticeHeader";
@@ -25,7 +20,7 @@ function PhysicsPractice() {
   let [value, setValue] = useState(0);
   let [CorrectVisible, setCorrectVisible] = useState(false);
   let [WrongVisible, setWrongVisible] = useState(false);
-  const contextRef = createRef();
+
   const handleChange = (event, { value }) => {
     setValue(value);
   };
@@ -82,6 +77,7 @@ function PhysicsPractice() {
                               value={answerOption.option}
                               checked={value === answerOption.option}
                               onClick={handleChange}
+                              key={answerOption.option}
                             />
                           </b>
                         </Transition>

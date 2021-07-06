@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Header, Container } from "semantic-ui-react";
+import { Grid, Container } from "semantic-ui-react";
 import SubjectsSegment from "./SubjectsSegment";
 import LogoPhysics from "../../Images/LogoPhysics.jpg";
 import LogoBiology from "../../Images/LogoBiology.jpg";

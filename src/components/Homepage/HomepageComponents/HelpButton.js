@@ -23,7 +23,7 @@ function HelpButton() {
             size="large"
             onClick={() => setOpen(true)}
           >
-            <Icon name="question circle" inverted color="white" attached />
+            <Icon name="question circle" inverted attached />
           </Button>
         </Sticky>
       </Rail>

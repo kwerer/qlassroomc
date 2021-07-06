@@ -1,21 +1,12 @@
-import React, { useState, createRef } from "react";
-import {
-  Button,
-  Header,
-  Image,
-  Modal,
-  Icon,
-  Rail,
-  Sticky,
-  Segment,
-} from "semantic-ui-react";
+import React, { useState } from "react";
+import { Button, Header, Image, Modal, Icon } from "semantic-ui-react";
 import styles from "../styles.module.css";
 export default function HelpButtonWithHint() {
   let [openHelp, setOpenHelp] = useState(false);
   let [openHint, setOpenHint] = useState(false);
   let [noMoreHints, setNoMoreHints] = useState(false);
   let [hintCount, setHintCount] = useState(3);
-  const contextRef = createRef();
+
   function handleHintClick() {
     if (hintCount > 0) {
       setHintCount(hintCount - 1);

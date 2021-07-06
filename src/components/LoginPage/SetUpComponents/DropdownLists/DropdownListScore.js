@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Dropdown, Segment } from "semantic-ui-react";
+import React from "react";
+import { Container, Dropdown } from "semantic-ui-react";
 import styles from "../styles.module.css";
 
 function DropdownListScore(props) {

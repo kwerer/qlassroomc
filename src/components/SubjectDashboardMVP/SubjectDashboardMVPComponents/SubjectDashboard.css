@@ -1,0 +1,165 @@
+/*Subject Dashboard MVP*/
+.ui.grid > .three.wide.column {
+  padding: 0px 0px 0px 14px !important;
+}
+
+.ui.grid > .thirteen.wide.column {
+  padding: 0 !important;
+}
+
+#dashboardcheckbox > .field > .ui.checkbox input:checked ~ .box:after,
+#dashboardcheckbox > .field > .ui.checkbox input:checked ~ label:after {
+  color: #2f9ceb !important;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  background-color: white !important;
+}
+
+#dashboardcheckbox > .field > .ui.checkbox .box:before,
+#dashboardcheckbox > .field > .ui.checkbox label:before {
+  background-color: #dfdfdf !important;
+
+  border-radius: 0 !important;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease,
+    box-shadow 0.1s ease;
+  border: 1px solid #000000;
+}
+/*color when the checkbox is checked*/
+#dashboardcheckbox > .field > .ui.checkbox input:checked label,
+#dashboardcheckbox > .field > .ui.checkbox input:checked + label {
+  color: #b5b5b5 !important;
+  transition: color 0.1s ease;
+}
+
+.ui.checkbox label:checked {
+  color: red !important;
+}
+#MonthlyLearningJourneyProgressBar.ui.medium.progress {
+  background-color: #57749e !important;
+}
+#MonthlyLearningJourneyProgressBar > .bar {
+  background-color: #2f9ceb !important;
+  min-width: 0px !important;
+}
+#YearlyProgressBar > .bar {
+  background-color: #2f9ceb !important;
+  min-width: 0px !important;
+}
+
+.MonthlyAchievementCircle {
+  border: 3.5px solid #57749e;
+  border-radius: 50px;
+  position: absolute;
+  top: -38px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+.MonthlyAchievementCircleCompleted {
+  border: 3px solid #2f9ceb;
+  border-radius: 50px;
+  position: absolute;
+  top: -38px;
+  width: 20px;
+  height: 20px;
+  background-color: #2f9ceb;
+}
+
+.Checkmark {
+  display: none !important;
+}
+
+.CheckmarkCompleted {
+  position: absolute;
+  top: 3px;
+  left: 0.5px;
+  color: white;
+}
+
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0px;
+  height: 0px;
+}
+
+/*tab menu */
+#tabmenu {
+  border: 0px solid red;
+}
+
+/*review tab*/
+.ui.radio.checkbox .box:before,
+.ui.radio.checkbox label:before {
+  border-radius: 0;
+  border-color: #2f9ceb !important;
+}
+.ui.radio.checkbox .box:after,
+.ui.radio.checkbox label:after {
+  border-radius: 0 !important;
+  transform: scale(0.7);
+
+  background-color: #2f9ceb !important;
+}
+
+#ReviewTabSegmentCheckbox + label {
+  color: white !important;
+  font-weight: 500;
+}
+#reviewtab > .ui.attached.menu .item {
+  width: 12vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #b5b5b5;
+  color: white;
+  font-size: 16px !important;
+  border-radius: 4px 4px 0px 0px;
+
+  border-bottom: 0px solid #57749e;
+}
+
+#reviewtab > .ui.attached.menu .item.active {
+  width: 12vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #57749e;
+}
+
+.Today {
+  background-color: #2f9ceb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  padding: 3px !important;
+}
+.TodayDiv {
+  border: 2px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 30px;
+  height: 30px;
+}
+
+.NotToday {
+  text-align: center !important;
+
+  border: 0 !important;
+}
+
+.NotTodayDiv {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}

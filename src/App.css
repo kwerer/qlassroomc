@@ -24,9 +24,49 @@
 #TabGap2 > .ui.grid {
   flex-wrap: nowrap !important;
 }
-@media only screen and (max-width: 600px) {
-  #TabGap2 > .ui.grid > .stretched.fourteen.wide.column {
-    padding: 0;
-    background-color: aqua;
-  }
+
+#TransitionalSegment > .ui.grid > .equal.width.row > .column > .ui.button {
+  border-color: blue;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+#TransitionalSegment {
+  padding-bottom: 0px;
+}
+#dropdown {
+  height: 30px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #57749e;
+  color: white;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+}
+#DropdownGrid > .row {
+  padding-bottom: 0 !important;
+}
+#DropdownGrid {
+  top: 20px;
+}
+.menu.transition.visible {
+  width: 100%;
+}
+.AnswerButton {
+  margin-top: 15px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2) !important;
+  background-color: white !important;
+  text-align: start !important;
+  display: flex !important;
+  flex-direction: row;
+}
+
+.AnswerButtonGreen {
+  margin-top: 15px !important;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2) !important;
+  background-color: Green !important;
+  text-align: start !important;
+  display: flex !important;
+  flex-direction: row;
 }

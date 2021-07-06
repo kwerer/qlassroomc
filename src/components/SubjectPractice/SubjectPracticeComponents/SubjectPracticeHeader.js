@@ -1,22 +1,13 @@
-import React, { useState, setState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import {
-  Sidebar,
-  Grid,
-  Header,
-  Segment,
-  Icon,
-  Button,
-  Modal,
-  Image,
-} from "semantic-ui-react";
-import Tab1 from "../../ReduxComponents/actions/ChangeTabButton/ChangeTabIndex1";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Header, Segment, Icon, Button, Modal, Image } from "semantic-ui-react";
+import { Tab1 } from "../../ReduxComponents/reduxSlicer/ChangeTabs";
 import styles from "../styles.module.css";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function SubjectPracticeHeader(props) {
   let history = useHistory();
-  const TabIndex = useSelector((state) => state.ChangeTab);
+
   const dispatch = useDispatch();
   let [open, setOpen] = useState(false);
   function OpenModal() {
@@ -25,7 +16,6 @@ function SubjectPracticeHeader(props) {
   function handlePageTab1Change() {
     history.push("/physics");
     dispatch(Tab1());
-    console.log(TabIndex);
   }
   return (
     <Segment className={styles.SubjectPracticeHeader} raised>
